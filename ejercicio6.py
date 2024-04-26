@@ -1,3 +1,5 @@
+#Programa para dividir en grupos a alumnos
+
 name=input("como te llamas? ")
 gender=input("Cual es tu sexo (M o H)? ")
 if gender == "M":
