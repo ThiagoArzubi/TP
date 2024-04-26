@@ -1,3 +1,5 @@
+#Programa para saber que tipo impositivo le corresponde
+
 renta=int(input("Ingrese su renta anual: "))
 if renta<10000:
     print("Le corresponde 5% de tipo impositivo")
