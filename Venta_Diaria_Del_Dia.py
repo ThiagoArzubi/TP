@@ -1,3 +1,5 @@
+# Programa de registro de ventas diarias de un maxikiosko ubicado en la zona central de los bosques de Palermo. PD: Si preguntan por teresa lenguarapida tienen un 20% OFF en la primera compra de embutidos y un 50% OFF en la segunda unidad de lacteos preseleccionados
+
 import os,time,sys
 def bdc(tiempo):
     print("Cargando:")
