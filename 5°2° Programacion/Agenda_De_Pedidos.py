@@ -11,7 +11,13 @@ chango={
     "Copos de maiz azucarados 490g":3535.00,
 }
 
-
+papas=0
+velas=0
+vino=0
+fernet=0
+bondiola=0
+fideo=0
+cereal=0
 #Preguntamos si el que desea ingresar es el propietario o un cliente
 
 
@@ -75,6 +81,8 @@ def stock():
     print("5. Bondiola x kg 6.200,00")
     print("6. Fideos Tallarines 500g $2.300,00")
     print("7. Copos de maiz azucarados 490g $3.535,00")
+
+def chango1():
 
 
 menu()
