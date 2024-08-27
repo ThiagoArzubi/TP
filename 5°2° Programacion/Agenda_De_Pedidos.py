@@ -11,6 +11,8 @@ chango={
     "Copos de maiz azucarados 490g":3535.00,
 }
 
+productos[]
+contador=
 papas=0
 velas=0
 vino=0
@@ -30,7 +32,7 @@ def agregar_pedido():
     
     producto = input("Ingrese el numero del producto: ")
     cantidad = int(input("Ingrese la cantidad: "))
-    pedido = {"cliente": cliente, "producto": producto, "cantidad": cantidad}
+    pedido = {"cliente": cliente, "producto": pitos, "cantidad": cantidad}
     pedidos.append(pedido)
     print("Pedido agregado con éxito.")
 
@@ -48,7 +50,7 @@ def mostrar_pedidos():
         print("No hay pedidos en la agenda.")
     else:
         for idx, pedido in enumerate(pedidos, start=1):
-            print(f"Pedido {idx}: Cliente: {pedido['cliente']}, Producto: {pedido['producto']}, Cantidad: {pedido['cantidad']}")
+            print(f"Pedido {idx}: Cliente: {pedido['cliente']}, Producto: {pitos['producto']}, Cantidad: {pedido['cantidad']}")
 
 def menu():
     while True:
@@ -83,6 +85,38 @@ def stock():
     print("7. Copos de maiz azucarados 490g $3.535,00")
 
 def chango1():
+    stock():
+    pitos=
+    while True:
+        np=str(int("Ingresa el numero del producto: "))
+        cp=int(input("Ingresa la cantidad de pedidos (en numeros): ")) 
+        if np == 1: 
+            papas+=cp
+            pt=cp*2999.99
+        elif np == 2:
+            velas+=cp
+            pt=cp*1999.99
+        elif np == 3:
+            vino+=cp
+            pt=cp*1999.99
+        elif np == 4:
+            fernet+=cp
+            pt=cp*9999.99
+        elif np == 5:
+            bondiola+=cp
+            pt=cp*6200.00
+        elif np == 6:
+            fideo += cp
+            pt=cp*2300.00
+        elif np == 7:
+            cereal += cp
+            pt=cp*3535.00
+        pito=str(input("Desea ingresar otro producto?(Si/No): ")).lower()
+        if pito == "si":
+            continue
+        else:
+            break
+    
 
-
-menu()
+if __name__ == "__main__":
+    menu()
