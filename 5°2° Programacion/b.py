@@ -26,12 +26,12 @@ cereal=0
 pedidos = []
 
 def agregar_pedido():
+    Borrado = False 
     cliente = input("Ingrese el nombre del cliente: ")
     stock()
-    
     producto = input("Ingrese el numero del producto: ")
     cantidad = int(input("Ingrese la cantidad: "))
-    pedido = {"cliente": cliente, "producto": producto, "cantidad": cantidad}
+    pedido = {"cliente": cliente, "producto": producto, "cantidad": cantidad, "eliminado": Borrado}
     pedidos.append(pedido)
     print("Pedido agregado con éxito.")
 
@@ -39,8 +39,8 @@ def eliminar_pedido():
     print("")
     cliente = input("Ingrese el nombre del cliente del pedido que desea eliminar: ")
     for pedido in pedidos:
-        if pedido["cliente"] == cliente:
-            pedidos.remove(pedido)
+        if pedido["cliente"] == cliente and not pedido["eliminado"]:
+            pedido ["eliminado"]=True
             print("")
             print("Pedido eliminado con éxito.")
             return
@@ -51,7 +51,7 @@ def mostrar_pedidos():
         print("No hay pedidos en la agenda.")
     else:
         for idx, pedido in enumerate(pedidos, start=1):
-            print(f"Pedido {idx}: Cliente: {pedido['cliente']}, Producto: {pedido['producto']}, Cantidad: {pedido['cantidad']}")
+            print(f"Pedido {idx}: Cliente: {pedido['cliente']}, Producto: {pedido['producto']}, Cantidad: {pedido['cantidad']}, Borrado: {pedido['eliminado']}")
 
 def menu():
     while True:
@@ -85,6 +85,37 @@ def stock():
     print("6. Fideos Tallarines 500g $2.300,00")
     print("7. Copos de maiz azucarados 490g $3.535,00")
 
+def chango1():
+    
+    while True:
+        np=str(int("Ingresa el numero del producto: "))
+        cp=int(input("Ingresa la cantidad de pedidos (en numeros): ")) 
+        if np == 1: 
+            papas+=cp
+            pt=cp*2999.99
+        elif np == 2:
+            velas+=cp
+            pt=cp*1999.99
+        elif np == 3:
+            vino+=cp
+            pt=cp*1999.99
+        elif np == 4:
+            fernet+=cp
+            pt=cp*9999.99
+        elif np == 5:
+            bondiola+=cp
+            pt=cp*6200.00
+        elif np == 6:
+            fideo += cp
+            pt=cp*2300.00
+        elif np == 7:
+            cereal += cp
+            pt=cp*3535.00
+        volver=str(input("Desea ingresar otro producto?(Si/No): ")).lower()
+        if volver == "si":
+            continue
+        else:
+            break
 
 if __name__ == "__main__":
     menu()
