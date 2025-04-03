@@ -22,3 +22,13 @@ li {
     font-size: medium;
     color: black;
 }
+
+button{
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(115, 0, 255);
+    color: rgb(0, 0, 0);
+    width: 100px;
+    height: 35px;
+    font-size: medium;
+}
