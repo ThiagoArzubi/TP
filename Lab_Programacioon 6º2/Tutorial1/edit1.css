@@ -1,0 +1,49 @@
+html{
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+.card{
+    border: 2px solid #070776;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+    width: 500px;
+}
+.card .cardbody{
+    padding: 0 0 1rem 1rem;
+    width: 80%;
+}
+
+.card .ribbon{
+    background: #ff00d0;
+    margin-right: 1.5rem;
+    position: relative;
+    width: 10%;
+}
+.card .contimg{
+    align-items: center;
+    aspect-ratio: 1;
+    background: white;
+    border: 2px solid #0e0e32;
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px 0px #b7acac;
+    display: flex;
+    justify-content: center;
+    left: calc(50% - 36px);
+    position: absolute;
+    top: -30px;
+    width: 70px;
+}
+.card .contimg img{
+    transform: scale(80%);
+}
+.card .text{
+    color: #0505c7;
+    text-align: justify;
+}
+
+img{
+    width: 100x;
+    height: 60px;
+    border-radius: 50%;
+}
