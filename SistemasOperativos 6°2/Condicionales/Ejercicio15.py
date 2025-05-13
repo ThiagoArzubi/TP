@@ -3,9 +3,9 @@ os.system ("cls")
 
 
 #CALCULAR SI UN NUMERO ES PAR O IMPAR
-print("----------------------------")
+print("---------------------------")
 print(" EJERCICIO 15: PAR O IMPAR")
-print("----------------------------")
+print("---------------------------")
 print("")
 
 num=int(input("Ingrese un numero: "))

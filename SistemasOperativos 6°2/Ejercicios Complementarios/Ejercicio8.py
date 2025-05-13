@@ -4,7 +4,7 @@ os.system ("cls")
 
 #CALCULAR TIEMPO DE ENCUENTRO
 print("------------------------------------")
-print(" COMPLEMENTO 5: TIEMPO DE ENCUENTRO")
+print(" COMPLEMENTO 8: TIEMPO DE ENCUENTRO")
 print("------------------------------------")
 print("")
 va=float(input("Ingrese la velocidad de A: "))
