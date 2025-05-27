@@ -2,7 +2,7 @@ import os
 os.system ("cls")
 
 
-#CONTAR NUMEROS PARES
+#INVERTIR NUMERO
 print("--------------------------------")
 print(" Complemento 6: INVERTIR NUMERO")
 print("--------------------------------")
