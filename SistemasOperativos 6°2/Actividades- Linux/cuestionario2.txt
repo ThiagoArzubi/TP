@@ -1,0 +1,92 @@
+1. Introducción a la consola  
+1. ¿Cómo se introducen los comandos en Linux y qué diferencia tiene respecto a otros sistemas operativos?  
+2. ¿Qué ocurre si un comando no es reconocido al ejecutarlo en la terminal?  
+3. ¿Qué tecla se debe presionar para ejecutar un comando después de escribirlo en la terminal?  
+
+ 2. Inicio y salida del sistema  
+4. ¿Qué es una sesión en Linux?  
+5. ¿Cómo se puede cerrar una sesión de usuario en la terminal? (Menciona tres métodos)  
+6. ¿Qué comando se utiliza para apagar el sistema de inmediato?  
+7. ¿Qué comando se utiliza para reiniciar el sistema?  
+
+ 3. Administración de usuarios  
+8. ¿Cuál es la función del usuario "root" en Linux?  
+9. ¿Qué comando se usa para crear un nuevo usuario en Linux?  
+10. ¿Qué significa la opción `-m` al ejecutar `useradd`?  
+11. ¿En qué archivo se almacenan las contraseñas en Linux?  
+12. ¿Qué comando se utiliza para eliminar un usuario?  
+
+ 4. Comandos básicos  
+13. ¿Qué comando se usa para cambiar de directorio en Linux?  
+14. ¿Cómo se lista el contenido de un directorio?  
+15. ¿Qué comando permite copiar archivos de un lugar a otro?  
+16. ¿Cuál es la función del comando `chmod`?  
+17. ¿Qué comando se utiliza para conocer el espacio libre en disco?  
+18. ¿Cuál es la diferencia entre `shutdown -h now` y `shutdown -r now`?  
+
+ 5. Estructura de archivos y directorios  
+19. ¿Cuál es el directorio raíz en Linux?  
+20. Menciona tres directorios principales del sistema y su función.  
+21. ¿Qué diferencia hay entre un enlace simbólico y un enlace duro?  
+
+ 6. Inicialización y Runlevels  
+22. ¿Qué es el proceso `init` y cuál es su función?  
+23. ¿Cuáles son los diferentes niveles de ejecución (runlevels) en Linux?  
+24. ¿Qué comando se usa para cambiar de un runlevel a otro sin reiniciar el sistema?  
+
+ 7. Terminales y consolas  
+25. ¿Qué son las consolas virtuales en Linux?  
+26. ¿Cómo se cambia entre diferentes consolas virtuales?  
+27. ¿Qué combinación de teclas permite regresar al entorno gráfico desde la consola de texto
+
+1. Introducción a la consola:
+1. La forma de introducir comandos en Linux es similar a la del DOS y los sistemas operativos orientados a línea de comando. Al igual que UNIX, Linux distingue entre mayúsculas y minúsculas.
+2. Debido a esto si al introducir un comando este no es reconocido, deberemos asegurarnos de haberlo escribirlo en forma correcta, con las mayúsculas y minúsculas apropiadas. 
+3. La ejecución del comando se realiza luego de que se presiona la tecla <Enter>.
+
+2. Inicio y Salida del sistema:
+4. Una sesión es el período de tiempo que transcurre desde que nos identificamos en el sistema hasta que salimos de él.
+5. Tres métodos para cerrar una sesión en la terminal son:
+- Usando el comando exit.
+- Usando el comando logout.
+- Presionando Ctrl + D.
+6. El comando para reiniciar el sistema es reboot o shutdown -r now.
+7. Para reiniciar el sistema utilizaremos el comando shutdown -r. También podemos reiniciar el sistema en el instante usando el comando reboot o apretando las teclas Ctrl-Alt-Supr.
+
+3. Administración de usuarios:
+8. El usuario "root" es el superusuario del sistema, tiene permisos para realizar cualquier acción, incluyendo modificar el sistema, instalar software, y administrar usuarios.
+9. El comando useradd crea al usuario con un numero de usuario (UID o User ID) mayor a 100 e incluye a este usuario en el grupo 100 (GID o Group ID).
+10. La opción «-m» obliga al comando a crear un directorio personal del usuario en /home.
+11. Las contraseñas se almacenan en el archivo /etc/shadow.
+12. El comando para eliminar un usuario es userdel.
+
+4. Comandos básicos:
+13. El comando es cd (change directory).
+14. El comando para listar el contenido es ls.
+15. El comando para copiar archivos es cp. 
+16. El comando chmod se utiliza para cambiar los permisos de acceso a archivos y directorios.
+17. El comando para conocer el espacio libre en disco es df.
+18. shutdown -h now apaga el sistema de inmediato, mientras que shutdown -r now reinicia el sistema
+
+5. Estructura de archivos y directorios:
+19. El directorio raíz es /.
+20. /home: Contiene los directorios personales de los usuarios.
+/bin: Contiene los archivos binarios esenciales para el sistema.
+/etc: Contiene los archivos de configuración del sistema.
+21. Un enlace simbólico es un archivo que apunta a otro archivo o directorio, mientras que un enlace duro es una referencia directa al mismo inode de un archivo, por lo que ambos apuntan al mismo archivo en el sistema.
+
+6. Inicialización y Runlevels:
+22. El proceso init es el primer proceso que se ejecuta al iniciar el sistema. Es responsable de iniciar y gestionar los demás procesos del sistema.
+23. Los niveles de ejecución son estados predefinidos en los que el sistema puede operar, y se numeran del 0 al 6. Por ejemplo:
+0: Apagado del sistema.
+1: Modo de usuario único (modo de mantenimiento).
+5: Modo gráfico.
+6: Reinicio del sistema.
+24. El comando es telinit seguido del número del runlevel.
+
+7. Terminales y consolas:
+25. Son pantallas de terminal adicionales a la principal que se pueden utilizar para ejecutar diferentes tareas simultáneamente en el mismo sistema.
+26. Se cambian con las combinaciones de teclas Ctrl + Alt + F1, Ctrl + Alt + F2, etc., dependiendo de la consola a la que se quiera acceder.
+27. La combinación de teclas es Ctrl + Alt + F7 o Ctrl + Alt + F1, dependiendo de la distribución.
+
+Thiago Arzubi Lo Balbo

@@ -1,0 +1,50 @@
+Cuestionario sobre Instalación de Linux  
+
+ 1. Preparación de la instalación  
+1. ¿Qué opciones existen para obtener el instalador de Debian?  
+2. ¿Cuál es la diferencia entre la instalación por Internet y la instalación por DVD?  
+3. ¿Qué configuración del BIOS se debe modificar antes de iniciar la instalación?  
+
+ 2. Particionado del disco  
+4. ¿Cómo se identifican los discos IDE y los discos SCSI o SATA en Linux?  
+5. Explica brevemente qué es RAID y cuál es su función.  
+6. ¿Qué ventajas ofrece el Gestor Lógico de Volúmenes (LVM)?  
+7. ¿Cuál es la función del punto de montaje en un sistema de archivos?  
+8. ¿Cuántas particiones primarias se pueden crear en un disco y cómo se gestionan las adicionales?  
+9. ¿Qué función cumple la partición de intercambio (swap) y cómo se recomienda dimensionarla?  
+
+ 3. Instalación del sistema operativo  
+10. ¿Cuáles son las opciones de instalación de Debian según el instalador?  
+11. ¿Qué proceso sigue la instalación automática para la configuración de red?  
+12. ¿Qué es el gestor de arranque GRUB y por qué es importante?  
+13. ¿Por qué no se recomienda iniciar sesión directamente con el usuario root?  
+
+ 4. Instalación en modo gráfico y experto  
+14. ¿Qué ventaja ofrece la instalación en modo experto respecto al modo estándar?  
+15. ¿Qué comando se utiliza para instalar el servidor gráfico si no se ha instalado durante la instalación del sistema?
+
+1. Preparación de la instalación:
+1. Se puede optar por las imágenes de la versión de instalación vía Internet (debian-XXX-netinst.iso) o los de la versión en DVD (debian-XXX-DVD-X.iso).
+2. Si elegimos la instalación vía Internet deberemos contar con una conexión a Internet, de modo que puedan descargarse los paquetes necesarios una vez iniciada. Si no poseemos conexión a Internet o queremos que la instalación sea más rápida y controlada deberemos optar por la versión en DVD
+3. inicializando la computadora con el CD o DVD colocado en la lectora y habiendo configurado el BIOS de la maquina para iniciar (bootear) desde la lectora de CD/DVD.
+
+2. Particionado del disco:
+4. Los discos IDE se identifican como /dev/hda, /dev/hdb, etc., mientras que los discos SCSI y SATA se identifican como /dev/sda, /dev/sdb, etc.
+5. RAID (Redundant Array of Independent Disks) es una tecnología que combina múltiples discos duros en un solo conjunto para mejorar el rendimiento o la redundancia. Su función principal es proporcionar mayor seguridad, rendimiento o ambos.
+6. LVM permite crear volúmenes lógicos sobre volúmenes físicos, lo que proporciona flexibilidad en la gestión del almacenamiento. Las ventajas incluyen la capacidad de redimensionar fácilmente los volúmenes, combinar discos, y realizar copias de seguridad de volúmenes completos.
+7. El punto de montaje es una ubicación en el sistema de archivos donde se enlazan los dispositivos de almacenamiento, permitiendo acceder a su contenido de manera organizada.
+8. Se pueden crear hasta 4 particiones primarias en un disco. Si se necesitan más, se puede crear una partición extendida, la cual puede contener varias particiones lógicas.
+9. La partición swap actúa como memoria virtual, almacenando datos que no caben en la RAM. Se recomienda dimensionarla entre 1 a 2 veces la cantidad de memoria RAM, aunque depende del uso del sistema.
+
+
+3. Instalación del sistema operativo
+10. El instalador de Debian ofrece opciones como instalación mínima, instalación estándar, y opciones personalizadas para incluir o excluir ciertos paquetes durante la instalación.
+11. El instalador intenta detectar automáticamente la red mediante DHCP. Si no es posible, solicita la configuración manual de la red, como la dirección IP, la máscara de subred y la puerta de enlace.
+12. GRUB (Grand Unified Bootloader) es un gestor de arranque que permite seleccionar y cargar el sistema operativo deseado en el momento del inicio del equipo. Es importante porque permite elegir entre diferentes sistemas operativos o configuraciones del kernel.
+13. Iniciar sesión como root puede ser peligroso ya que otorga permisos elevados, lo que aumenta el riesgo de cometer errores graves o de ser víctima de un ataque. Se recomienda usar una cuenta de usuario normal con privilegios limitados.
+
+4. Instalación en modo gráfico y experto
+14. La instalación en modo experto ofrece un control más detallado sobre las opciones de configuración, permitiendo al usuario personalizar el proceso de instalación de acuerdo a sus necesidades, como elegir paquetes específicos o configuraciones avanzadas.
+15. El comando para instalar el servidor gráfico es: apt-get install xorg
+
+Thiago Arzubi Lo Balbo
