@@ -1,0 +1,190 @@
+1. Introducción a la consola
+¿Cómo se introducen los comandos en Linux y qué diferencia tiene respecto a otros sistemas operativos?
+
+¿Qué ocurre si un comando no es reconocido al ejecutarlo en la terminal?
+
+¿Qué tecla se debe presionar para ejecutar un comando después de escribirlo en la terminal?
+
+2. Inicio y salida del sistema
+¿Qué es una sesión en Linux?
+
+¿Cómo se puede cerrar una sesión de usuario en la terminal? (Menciona tres métodos)
+
+¿Qué comando se utiliza para apagar el sistema de inmediato?
+
+¿Qué comando se utiliza para reiniciar el sistema?
+
+3. Administración de usuarios
+¿Cuál es la función del usuario "root" en Linux?
+
+¿Qué comando se usa para crear un nuevo usuario en Linux?
+
+¿Qué significa la opción -m al ejecutar useradd?
+
+¿En qué archivo se almacenan las contraseñas en Linux?
+
+¿Qué comando se utiliza para eliminar un usuario?
+
+4. Comandos básicos
+¿Qué comando se usa para cambiar de directorio en Linux?
+
+¿Cómo se lista el contenido de un directorio?
+
+¿Qué comando permite copiar archivos de un lugar a otro?
+
+¿Cuál es la función del comando chmod?
+
+¿Qué comando se utiliza para conocer el espacio libre en disco?
+
+¿Cuál es la diferencia entre shutdown -h now y shutdown -r now?
+
+5. Estructura de archivos y directorios
+¿Cuál es el directorio raíz en Linux?
+
+Menciona tres directorios principales del sistema y su función.
+
+¿Qué diferencia hay entre un enlace simbólico y un enlace duro?
+
+6. Inicialización y Runlevels
+¿Qué es el proceso init y cuál es su función?
+
+¿Cuáles son los diferentes niveles de ejecución (runlevels) en Linux?
+
+¿Qué comando se usa para cambiar de un runlevel a otro sin reiniciar el sistema?
+
+7. Terminales y consolas
+¿Qué son las consolas virtuales en Linux?
+
+¿Cómo se cambia entre diferentes consolas virtuales?
+
+¿Qué combinación de teclas permite regresar al entorno gráfico desde la consola de texto?
+
+Respuestas
+1. Introducción a la consola
+¿Cómo se introducen los comandos en Linux y qué diferencia tiene respecto a otros sistemas operativos?
+
+En Linux, los comandos se introducen en la terminal o consola de texto. La principal diferencia con otros sistemas operativos, como Windows, es que Linux se basa en un sistema de comandos de texto, lo que le da más flexibilidad y control sobre el sistema, en lugar de depender de interfaces gráficas.
+
+¿Qué ocurre si un comando no es reconocido al ejecutarlo en la terminal?
+
+Si el comando no es reconocido, se muestra un mensaje de error que típicamente dice algo como command not found. Esto puede ocurrir si el comando no está instalado, si está mal escrito o si no se encuentra en el PATH del sistema.
+
+¿Qué tecla se debe presionar para ejecutar un comando después de escribirlo en la terminal?
+
+Para ejecutar un comando en la terminal, se debe presionar la tecla Enter.
+
+2. Inicio y salida del sistema
+¿Qué es una sesión en Linux?
+
+Una sesión en Linux es un conjunto de procesos y actividades asociadas con un usuario que está interactuando con el sistema. Incluye todo lo que un usuario puede hacer, como abrir aplicaciones, ejecutar comandos, y acceder a recursos del sistema.
+
+¿Cómo se puede cerrar una sesión de usuario en la terminal? (Menciona tres métodos)
+
+Usando el comando exit
+
+Usando el comando logout
+
+Presionando Ctrl + D (esto también cierra la terminal).
+
+¿Qué comando se utiliza para apagar el sistema de inmediato?
+
+El comando es shutdown -h now, donde -h significa "apagar" y now especifica que el apagado debe ocurrir de inmediato.
+
+¿Qué comando se utiliza para reiniciar el sistema?
+
+El comando para reiniciar el sistema es reboot o shutdown -r now, donde -r indica que el sistema debe reiniciarse.
+
+3. Administración de usuarios
+¿Cuál es la función del usuario "root" en Linux?
+
+El usuario root es el superusuario, con permisos completos para hacer cualquier cosa en el sistema, incluyendo la administración de archivos y usuarios, configuración del sistema y ejecución de comandos críticos.
+
+¿Qué comando se usa para crear un nuevo usuario en Linux?
+
+El comando para crear un nuevo usuario es useradd.
+
+¿Qué significa la opción -m al ejecutar useradd?
+
+La opción -m crea el directorio home del usuario automáticamente, si no existe.
+
+¿En qué archivo se almacenan las contraseñas en Linux?
+
+Las contraseñas de los usuarios se almacenan en el archivo /etc/shadow.
+
+¿Qué comando se utiliza para eliminar un usuario?
+
+El comando para eliminar un usuario es userdel.
+
+4. Comandos básicos
+¿Qué comando se usa para cambiar de directorio en Linux?
+
+El comando para cambiar de directorio es cd (change directory).
+
+¿Cómo se lista el contenido de un directorio?
+
+El comando para listar el contenido de un directorio es ls.
+
+¿Qué comando permite copiar archivos de un lugar a otro?
+
+El comando para copiar archivos es cp.
+
+¿Cuál es la función del comando chmod?
+
+El comando chmod se utiliza para cambiar los permisos de los archivos y directorios en Linux.
+
+¿Qué comando se utiliza para conocer el espacio libre en disco?
+
+El comando para conocer el espacio libre en disco es df.
+
+¿Cuál es la diferencia entre shutdown -h now y shutdown -r now?
+
+shutdown -h now apaga el sistema de inmediato, mientras que shutdown -r now reinicia el sistema inmediatamente.
+
+5. Estructura de archivos y directorios
+¿Cuál es el directorio raíz en Linux?
+
+El directorio raíz en Linux es /. Es el punto de partida del sistema de archivos y desde allí se ramifican todos los demás directorios.
+
+Menciona tres directorios principales del sistema y su función.
+
+/home: Directorio donde se almacenan los directorios personales de los usuarios.
+
+/bin: Contiene los binarios esenciales del sistema, como los comandos básicos.
+
+/etc: Contiene archivos de configuración del sistema.
+
+¿Qué diferencia hay entre un enlace simbólico y un enlace duro?
+
+Un enlace simbólico es un archivo que actúa como un puntero hacia otro archivo o directorio, mientras que un enlace duro es un acceso directo al archivo real en el sistema de archivos, no un puntero. Los enlaces duros no pueden cruzar sistemas de archivos, mientras que los simbólicos sí.
+
+6. Inicialización y Runlevels
+¿Qué es el proceso init y cuál es su función?
+
+El proceso init es el primer proceso que se ejecuta al arrancar el sistema y es responsable de iniciar y administrar los servicios del sistema.
+
+¿Cuáles son los diferentes niveles de ejecución (runlevels) en Linux?
+
+Los runlevels definen el estado del sistema. Algunos ejemplos incluyen:
+
+0: Apagado del sistema
+
+1: Modo monousuario
+
+3: Modo multiusuario sin interfaz gráfica
+
+5: Modo multiusuario con interfaz gráfica
+
+6: Reinicio del sistema
+
+¿Qué comando se usa para cambiar de un runlevel a otro sin reiniciar el sistema?
+
+El comando para cambiar de runlevel es init, seguido del número del runlevel al que se quiere cambiar (por ejemplo, init 3).
+
+7. Terminales y consolas
+¿Qué son las consolas virtuales en Linux?
+
+Las consolas virtuales en Linux son terminales de texto independientes que permiten a un usuario interactuar con el sistema sin necesidad de una interfaz gráfica. Puedes tener varias consolas virtuales activas al mismo tiempo.
+
+¿Cómo se cambia entre diferentes consolas virtuales?
+
+Se cambia entre consolas virtuales utilizando la combinación de teclas `Ctrl + Alt + F1
