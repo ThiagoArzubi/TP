@@ -1,0 +1,104 @@
+Preguntas:
+
+1. ¿Qué es un proceso en el contexto de un sistema operativo Linux?
+a) Un archivo que se encuentra en disco
+b) Un script en Bash
+c) Un programa en ejecución en memoria
+d) Una carpeta en el sistema
+
+
+2. ¿Qué comando permite ver los procesos activos en el sistema?
+a) top
+b) kill
+c) ls
+d) grep
+
+
+3. ¿Qué opción del comando ps muestra los procesos sin terminal controlada?
+a) -u
+b) -a
+c) -r
+d) -x
+
+
+4. ¿Qué comando permite visualizar dinámicamente los procesos actualizados en tiempo real?
+a) ps -aux
+b) kill
+c) top
+d) jobs
+
+
+5. ¿Qué hace el símbolo & al final de una línea de comandos?
+a) Mata un proceso
+b) Ejecuta el proceso en primer plano
+c) Ejecuta el proceso en segundo plano
+d) Interrumpe el proceso actual
+
+
+6. ¿Qué comando se usa para listar los procesos en segundo plano o suspendidos en una terminal?
+a) ls -b
+b) proc
+c) jobs
+d) ps
+
+
+7. ¿Cuál de las siguientes combinaciones de teclas suspende un proceso en ejecución?
+a) Ctrl + C
+b) Ctrl + S
+c) Ctrl + Z
+d) Ctrl + D
+
+
+8. ¿Qué comando se utiliza para devolver una tarea suspendida al primer plano?
+a) fg
+b) bg
+c) top
+d) stop
+
+
+9. ¿Qué comando se usa para matar un proceso utilizando su PID?
+a) killall
+b) fg
+c) kill
+d) exit
+
+
+10. ¿Qué señal del comando kill detiene un proceso de forma inmediata y no permite recuperación?
+a) -15 o –TERM
+b) -2 o –INT
+c) -9 o –KILL
+d) -19 o –STOP
+
+
+Respuestas:
+
+1. c) Un programa en ejecución en memoria
+
+
+2. a) top
+
+
+3. d) -x
+
+
+4. c) top
+
+
+5. c) Ejecuta el proceso en segundo plano
+
+
+6. c) jobs
+
+
+7. c) Ctrl + Z
+
+
+8. a) fg
+
+
+9. c) kill
+
+
+10. c) -9 o –KILL
+
+Thiago Arzubi Lo Balbo - Remo Bertone - Bruno Chapa

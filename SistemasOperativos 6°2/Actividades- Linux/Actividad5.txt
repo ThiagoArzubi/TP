@@ -1,0 +1,142 @@
+Parte 1: Selección múltiple
+
+Preguntas:
+
+1. ¿Cuál es una de las principales ventajas del editor vi en entornos Linux?
+a) Posee una interfaz gráfica moderna
+b) Está disponible en todas las distribuciones
+c) Es compatible únicamente con Ubuntu
+d) No requiere conocimientos de comandos
+
+
+2. ¿Qué comando se utiliza para ingresar al modo edición exactamente en la posición del cursor?
+a) a
+b) o
+c) i
+d) r
+
+
+3. ¿Qué función cumple el comando dd en vi?
+a) Elimina el archivo
+b) Borra una línea y la copia al buffer
+c) Borra el carácter actual
+d) Guarda y sale del archivo
+
+
+4. ¿Qué comando permite pegar el contenido copiado del buffer?
+a) yy
+b) p
+c) x
+d) r
+
+
+5. ¿Cuál es la forma correcta de salir de vi sin guardar cambios?
+a) :x
+b) :q!
+c) :w
+d) ZZ
+
+
+
+Respuestas:
+
+1. b) Está disponible en todas las distribuciones
+
+
+2. c) i
+
+
+3. b) Borra una línea y la copia al buffer
+
+
+4. b) p
+
+
+5. b) :q!
+
+
+
+
+---
+
+Parte 2: Verdadero o Falso
+
+Preguntas:
+
+6. vi tiene un único modo de operación.
+→ V / F
+
+
+7. La tecla Esc permite salir del modo edición y volver al modo comando.
+→ V / F
+
+
+8. El comando x elimina una línea completa.
+→ V / F
+
+
+9. nano y mcedit son ejemplos de editores de texto en modo consola alternativos a vi.
+→ V / F
+
+
+10. :wq permite guardar y salir del editor.
+→ V / F
+
+
+
+Respuestas:
+
+6. F (Falso)
+
+
+7. V (Verdadero)
+
+
+8. F (Falso)
+
+
+9. V (Verdadero)
+
+
+10. V (Verdadero)
+
+
+---
+
+Parte 3: Respuesta breve
+
+Preguntas:
+
+11. ¿Qué diferencia hay entre el comando i y el comando A dentro de vi?
+
+
+12. Explica brevemente cómo copiar y pegar tres líneas completas en vi.
+
+
+13. ¿Qué ventajas tiene vi respecto a editores como nano o emacs en contextos de administración de servidores?
+
+
+14. Menciona dos editores de texto que operen bajo entorno gráfico (X Window) y que hayan sido mencionados en el módulo.
+
+
+15. ¿Qué sucede si ejecutás :!ls dentro del editor vi?
+
+
+
+Respuestas:
+
+11. i permite insertar texto antes del cursor; A mueve el cursor al final de la línea para insertar texto desde allí.
+
+
+12. Se usa 3yy para copiar tres líneas desde la posición del cursor, y luego p para pegarlas en otra ubicación.
+
+
+13. vi está siempre disponible, es rápido, liviano, no necesita entorno gráfico y funciona incluso en sistemas de recuperación.
+
+
+14. Gedit y KWrite.
+
+
+15. Se ejecuta el comando ls en la terminal desde vi y se muestra el resultado; luego se puede volver al archivo presionando Enter.
+
+Thiago Arzubi Lo Balbo - Remo Bertone - Bruno Chapa
