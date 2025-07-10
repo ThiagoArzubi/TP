@@ -3,8 +3,17 @@ h1{
 
 }
 
+#yo{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 27px;
+}
+
 body{
     background: linear-gradient(to right, aquamarine, rgb(238, 133, 238));
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: black;
 }
 
 button{
@@ -12,4 +21,30 @@ button{
     width: 90px;
     font-size: 15px;
     background: transparent;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contenedor{
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 17px;
+    margin: 30px;
+    max-width: 2000px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#Presentacion{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
 }
