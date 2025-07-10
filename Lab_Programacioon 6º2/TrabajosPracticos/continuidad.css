@@ -1,0 +1,15 @@
+h1{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+body{
+    background: linear-gradient(to right, aquamarine, rgb(238, 133, 238));
+}
+
+button{
+    height: 65px;
+    width: 90px;
+    font-size: 15px;
+    background: transparent;
+}
