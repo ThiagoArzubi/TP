@@ -1,0 +1,13 @@
+body{
+    background: linear-gradient(to right, aquamarine, rgb(238, 133, 238));
+    font-family: italic 'Times New Roman', Times, serif;
+    text-align: left;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    line-height: 1.6;
+}
+
+h1{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
