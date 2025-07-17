@@ -1,0 +1,36 @@
+body {
+  margin: 30px;
+  background-color: #f9dac4;
+  color: #333;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #2c3e50;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #444;
+  text-transform: none;
+}
+
+
+hr {
+  margin: 40px 0;
+  border: none;
+  border-top: 2px solid #000000;
+}
+
+.libertinus-mono-regular {
+  font-family: "Libertinus Mono", monospace;
+  font-weight: 400px;
+  font-style: normal;
+}

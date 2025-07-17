@@ -11,3 +11,11 @@ body{
 h1{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+.margen-personalizado {
+    border: 3px solid black;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: transparent;
+    border-radius: 10px;
+}
